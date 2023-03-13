@@ -1,3 +1,5 @@
+package prog2.exercise4.flight.booking.system;
+
 import java.util.Random;
 import java.util.Scanner;
 
