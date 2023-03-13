@@ -1,4 +1,4 @@
-import java.util.Random;
+mport java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -6,44 +6,30 @@ public class Main {
         String flightCompany="Flights-of-Fancy";
         Random random = new Random();
         int number = random.nextInt(90000)+10000;
-        int a,b,c;
-        a = (int) (Math.random() * 26 + 65);
-        b = (int) (Math.random() * 26 + 65);
-        c= (int) (Math.random() * 26 + 65);
+        int i,j,k;
+        i = (int) (Math.random() * 26 + 65);
+        j = (int) (Math.random() * 26 + 65);
+        k = (int) (Math.random() * 26 + 65);
         String flightID =(char)i+""+(char)j+""+number+""+(char)k;
         System.out.println("Please enter your full name here");
-
         Scanner getpassengerFullName = new Scanner(System.in);
-
         String passengerFullName = getpassengerFullName.nextLine();
-
         String tripSource ="NANJING";
-
         String sourceAirport ="NANJING LUKOU INTERNATIONAL AIRPORT";
-
         String tripDestination ="OULU";
-
         String destinationAirport ="OULU AIRPORT";
-
         System.out.println("Please enter your departureyear here");
-
         Scanner getdepartureyear = new Scanner(System.in);
-
         Integer departureyear = getdepartureyear.nextInt();
-
         if(departureyear<1000||departureyear>2100){
-
             System.out.println("Error!");
-
             System.exit(0);
         }
         System.out.println("Please enter your departuremonth here");
         Scanner getdeparturemonth = new Scanner(System.in);
         Integer departuremonth = getdeparturemonth.nextInt();
         if(departuremonth<1||departuremonth>12){
-
             System.out.println("Error!");
-
             System.exit(0);
         }
         System.out.println("Please enter your departureday here");
